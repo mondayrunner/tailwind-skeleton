@@ -8,49 +8,99 @@
 </head>
 <body>
 
-  <div class="container mx-auto max-w-3xl pt-20 p-8">
+<div class="container mx-auto max-w-4xl py-20 px-8">
 
-    <!-- intro -->
-    <div class="row pb-8">
-      <h1 class="text-4xl pb-3">Example Page</h1>
-      <p>This page contains all the examples needed for making a basic  Tailwind Skeleton website.</p>
+  <!-- intro -->
+  <div class="row pb-8">
+    <h1 class="text-4xl mb-3">Example Page</h1>
+    <p>This page contains all the examples needed for making a basic  Tailwind Skeleton website.</p>
+  </div>
+
+  <!-- grid -->
+  <div class="row pb-8">
+    <h2 class="text-2xl mb-3 uppercase">Grid</h1>
+    <div class="grid sm:grid-cols-12 gap-3">
+      <div class="sm:col-span-1 bg-slate-100 p-2 uppercase">One</div>
+      <div class="sm:col-span-11 bg-slate-100 p-2 uppercase">Eleven</div>
+
+      <div class="sm:col-span-2 bg-slate-100 p-2 uppercase">Two</div>
+      <div class="sm:col-span-10 bg-slate-100 p-2 uppercase">Ten</div>
+
+      <div class="sm:col-span-3 bg-slate-100 p-2 uppercase">Three</div>
+      <div class="sm:col-span-9 bg-slate-100 p-2 uppercase">Nine</div>
+
+      <div class="sm:col-span-4 bg-slate-100 p-2 uppercase">Four</div>
+      <div class="sm:col-span-8 bg-slate-100 p-2 uppercase">Eight</div>
+
+      <div class="sm:col-span-5 bg-slate-100 p-2 uppercase">Five</div>
+      <div class="sm:col-span-7 bg-slate-100 p-2 uppercase">Seven</div>
+
+      <div class="sm:col-span-6 bg-slate-100 p-2 uppercase">Six</div>
+      <div class="sm:col-span-6 bg-slate-100 p-2 uppercase">Six</div>
+
+      <div class="sm:col-span-7 bg-slate-100 p-2 uppercase">Seven</div>
+      <div class="sm:col-span-5 bg-slate-100 p-2 uppercase">Five</div>
+
+      <div class="sm:col-span-8 bg-slate-100 p-2 uppercase">Eight</div>
+      <div class="sm:col-span-4 bg-slate-100 p-2 uppercase">Four</div>
+
+      <div class="sm:col-span-9 bg-slate-100 p-2 uppercase">Nine</div>
+      <div class="sm:col-span-3 bg-slate-100 p-2 uppercase">Three</div>
+
+      <div class="sm:col-span-10 bg-slate-100 p-2 uppercase">Ten</div>
+      <div class="sm:col-span-2 bg-slate-100 p-2 uppercase">Two</div>
+
+      <div class="sm:col-span-11 bg-slate-100 p-2 uppercase">Eleven</div>
+      <div class="sm:col-span-1 bg-slate-100 p-2 uppercase">One</div>
+
     </div>
 
-    <!-- lists -->
-    <div class="row pb-8">
-      <h2 class="text-3xl pb-3">Lists</h1>
-      <div class="flex flex-col sm:flex-row">
-        <ul class="list-disc list-inside flex-grow mb-4">
-          <li>Item 1</li>
-          <li>
-            Item 2
-            <ul class="list-disc list-inside ml-4">
-              <li>Item 2.1</li>
-              <li>Item 2.2</li>
-            </ul>
-          </li>
-          <li>Item 3</li>
-        </ul>
+  </div>
 
-        <ol class="list-decimal list-inside flex-grow mb-4">
-          <li>Item 1</li>
-          <li>
-            Item 2
-            <ul class="list-decimal list-inside ml-4">
-              <li>Item 2.1</li>
-              <li>Item 2.2</li>
-            </ul>
-          </li>
-          <li>Item 3</li>
-        </ul>
-    </div>
+  <!-- typography -->
+  <div class="row pb-8">
+    <h1 class="text-5xl mb-3">Heading <code class="text-base bg-slate-100 text-slate-500">&lt;h1&gt;</code></h1>
+    <h2 class="text-4xl mb-3">Heading <code class="text-base bg-slate-100 text-slate-500">&lt;h2&gt;</code></h2>
+    <h3 class="text-3xl mb-3">Heading <code class="text-base bg-slate-100 text-slate-500">&lt;h3&gt;</code></h3>
+    <h4 class="text-2xl mb-3">Heading <code class="text-base bg-slate-100 text-slate-500">&lt;h4&gt;</code></h4>
+    <h5 class="text-xl mb-3">Heading <code class="text-base bg-slate-100 text-slate-500">&lt;h5&gt;</code></h5>
+    <h6 class="text-lg mb-3">Heading <code class="text-base bg-slate-100 text-slate-500">&lt;h6&gt;</code></h6>
+  </div>
+
+  <!-- lists -->
+  <div class="row pb-8">
+    <h2 class="text-2xl mb-3 uppercase">Lists</h1>
+    <div class="flex flex-col sm:flex-row">
+      <ul class="list-disc list-inside flex-grow ml-4 mb-4">
+        <li>Item 1</li>
+        <li>
+          Item 2
+          <ul class="list-disc list-inside ml-4">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+          </ul>
+        </li>
+        <li>Item 3</li>
+      </ul>
+
+      <ol class="list-decimal list-inside flex-grow ml-4 mb-4">
+        <li>Item 1</li>
+        <li>
+          Item 2
+          <ul class="list-decimal list-inside ml-4">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+          </ul>
+        </li>
+        <li>Item 3</li>
+      </ul>
   </div>
 
   <!-- buttons -->
   <div class="row pb-8">
-    <h2 class="text-3xl pb-3">Buttons</h1>
+    <h2 class="text-2xl mb-3 uppercase">Buttons</h1>
     
-    <div class="grid grid-cols-4 gap-2">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
       <a class="inline-block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center" href="#">Anchor</a>
 
       <button class="inline-block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center">Button</button>
@@ -67,8 +117,21 @@
 
       <input class="inline-block h-10 py-2 px-6 rounded border uppercase font-semibold hover:border-gray-500 text-center cursor-pointer" type="button" value="button input">
 
-    </div>    
+    </div>
+
   </div>
+
+  <!-- code -->
+  <div class="row pb-8">
+    <h2 class="text-2xl mb-3 uppercase">Code</h1>
+    <pre>
+    <code>.some-class {
+      background-color: red;
+    }</code>
+    </pre>
+  </div>
+
+</div>
 
 </body>
 </html>
