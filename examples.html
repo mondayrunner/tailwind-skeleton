@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Some examples</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <div class="container mx-auto max-w-3xl pt-20 p-8">
+
+    <!-- intro -->
+    <div class="row pb-8">
+      <h1 class="text-4xl pb-3">Example Page</h1>
+      <p>This page contains all the examples needed for making a basic  Tailwind Skeleton website.</p>
+    </div>
+
+    <!-- lists -->
+    <div class="row pb-8">
+      <h2 class="text-3xl pb-3">Lists</h1>
+      <div class="flex flex-col sm:flex-row">
+        <ul class="list-disc list-inside flex-grow mb-4">
+          <li>Item 1</li>
+          <li>
+            Item 2
+            <ul class="list-disc list-inside ml-4">
+              <li>Item 2.1</li>
+              <li>Item 2.2</li>
+            </ul>
+          </li>
+          <li>Item 3</li>
+        </ul>
+
+        <ol class="list-decimal list-inside flex-grow mb-4">
+          <li>Item 1</li>
+          <li>
+            Item 2
+            <ul class="list-decimal list-inside ml-4">
+              <li>Item 2.1</li>
+              <li>Item 2.2</li>
+            </ul>
+          </li>
+          <li>Item 3</li>
+        </ul>
+    </div>
+  </div>
+
+  <!-- buttons -->
+  <div class="row pb-8">
+    <h2 class="text-3xl pb-3">Buttons</h1>
+    
+    <div class="grid grid-cols-4 gap-2">
+      <a class="inline-block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center" href="#">Anchor</a>
+
+      <button class="inline-block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center">Button</button>
+
+      <input class="inline-block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center cursor-pointer" type="submit" value="submit input">
+
+      <input class="inline-block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center cursor-pointer" type="button" value="button input">
+
+      <a class="inline-block h-10 py-2 px-6 rounded border uppercase font-semibold hover:border-gray-500 text-center" href="#">Anchor</a>
+
+      <button class="inline-block h-10 py-2 px-6 rounded border uppercase font-semibold hover:border-gray-500 text-center">Button</button>
+
+      <input class="inline-block h-10 py-2 px-6 rounded border uppercase font-semibold hover:border-gray-500 text-center cursor-pointer" type="submit" value="submit input">
+
+      <input class="inline-block h-10 py-2 px-6 rounded border uppercase font-semibold hover:border-gray-500 text-center cursor-pointer" type="button" value="button input">
+
+    </div>    
+  </div>
+
+</body>
+</html>
