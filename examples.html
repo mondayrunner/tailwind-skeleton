@@ -131,6 +131,39 @@
     </pre>
   </div>
 
+  <!-- form -->
+  <div class="row pb-8 max-w-2xl">
+    <h2 class="text-2xl mb-3 uppercase">Form</h1>
+
+    <form>
+      <div class="pb-4 flex">
+        <div class="sm:col-span-6 w-full">
+          <label class="block mb-1" for="exampleEmailInput">Your email</label>
+          <input class="block border w-full p-2" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        </div>
+        <div class="sm:col-span-6 ml-4 w-full">
+          <label class="block mb-1" for="exampleRecipientInput">Reason for contacting</label>
+          <select class="block border w-full p-2" id="exampleRecipientInput">
+            <option value="Option 1">Questions</option>
+            <option value="Option 2">Admiration</option>
+            <option value="Option 3">Can I get your number?</option>
+          </select>
+        </div>
+      </div>
+      <div class="pb-6">
+        <label class="block mb-1" for="exampleMessage">Message</label>
+        <textarea class="block border w-full p-2" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+      </div>
+      <label class="float-right">
+        <input type="checkbox">
+        <span class="">Send a copy to yourself</span>
+      </label>
+      <input class="block h-10 py-2 px-6 rounded bg-cyan-400 text-white uppercase font-semibold hover:bg-cyan-500 text-center" type="submit" value="Submit">
+    </form>
+
+  </div>
+
+
 </div>
 
 </body>
