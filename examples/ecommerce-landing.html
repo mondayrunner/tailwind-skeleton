@@ -9,15 +9,6 @@
 </head>
 <body>
 
-<button class="flex items-center text-grey-800 p-3" id="navbar-burger">
-  <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <title>Mobile menu</title>
-    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-  </svg>
-</button>
-
-<div class="hidden text-4xl" id="menu">Menu</div>
-
 <!-- notify -->
 <!-- <div class="h-8 bg-gray-100 flex flex-wrap content-center justify-center">
   <p class="font-light text-gray-400">Message of the day</p>
@@ -26,9 +17,28 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
   <!-- top -->
-  <header class="md:flex items-center py-6">
+  <header class="flex relative items-center py-6">
 
-    <nav class="flex-1">
+    <!-- mobile menu -->
+    <div class="hidden fixed top-24 left-0 w-full bg-white z-50 transition-all duration-300" id="menu">
+      <nav class="flex flex-col flex-1 min-h-screen text-2xl items-center justify-center pt-120">
+        <a href="#" class="block p-3 hover:underline">Shop</a>
+        <a href="#" class="block p-3 hover:underline">Lookbooks</a>
+        <a href="#" class="block p-3 hover:underline">Info</a>
+        <a href="#" class="block p-3 hover:underline">Insta</a>
+      </nav>
+    </div>
+
+    <!-- hamburger icon -->
+    <button class="lg:hidden flex flex-1 items-center text-grey-800 p-3" id="navbar-burger">
+      <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Mobile menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </button>
+
+    <!-- menu -->
+    <nav class="hidden lg:block flex-1">
       <ul class="flex">
         <li><a href="#" class="block p-3 hover:underline">Shop</a>
         <li><a href="#" class="block p-3 hover:underline">Lookbooks</a>
@@ -37,7 +47,7 @@
       </ul>
     </nav>
 
-    <h1 class="flex-1 text-center text-4xl justify-center">
+    <h1 class="flex-1 text-center text-2xl lg:text-4xl justify-center">
       <a href="#">SKELETON SHOP</a>
     </h1>
 
